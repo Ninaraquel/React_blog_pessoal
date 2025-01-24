@@ -36,7 +36,7 @@ function Login() {
     return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-2 
-                    h-screen place-items-center font-bold bg-lime-100">
+                    h-screen place-items-center font-bold">
                 <form className="flex justify-center items-center flex-col w-1/2 gap-4"
                     onSubmit={login}>
                     <h2 className="text-slate-900 text-5xl ">Entrar</h2>
@@ -46,7 +46,7 @@ function Login() {
                             type="text"
                             id="usuario"
                             name="usuario"
-                            placeholder="Usuario"
+                            placeholder="usuario@exemplo.com"
                             className="border-2 border-slate-700 rounded p-2"
                             value={usuarioLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}

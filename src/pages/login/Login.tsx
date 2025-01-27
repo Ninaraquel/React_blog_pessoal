@@ -35,8 +35,8 @@ function Login() {
 
     return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-2 
-                    h-screen place-items-center font-bold">
+            <div className="grid grid-cols-1 lg:grid-cols-2
+                    h-screen place-items-center font-bold bg-amber-100">
                 <form className="flex justify-center items-center flex-col w-1/2 gap-4"
                     onSubmit={login}>
                     <h2 className="text-slate-900 text-5xl ">Entrar</h2>
@@ -47,7 +47,8 @@ function Login() {
                             id="usuario"
                             name="usuario"
                             placeholder="usuario@exemplo.com"
-                            className="border-2 border-slate-700 rounded p-2"
+                            className="border-2 border-slate-700 
+                            rounded-3xl p-2"
                             value={usuarioLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -59,15 +60,16 @@ function Login() {
                             id="senha"
                             name="senha"
                             placeholder="Senha"
-                            className="border-2 border-slate-700 rounded p-2"
+                            className="border-2 border-slate-700 
+                            rounded-3xl p-2"
                             value={usuarioLogin.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-lime-900 flex justify-center
-                                   hover:bg-lime-700 text-white w-1/2 py-2">
+                        className="rounded-3xl bg-cyan-900 flex justify-center 
+                                   hover:bg-cyan-700 text-white w-1/2 py-2">
 
                         {isLoading ? <RotatingLines
                             strokeColor="white"
@@ -84,7 +86,7 @@ function Login() {
 
                     <p>
                         Ainda não tem uma conta?{' '}
-                        <Link to="/cadastro" className="text-lime-800 hover:underline">
+                        <Link to="/cadastro" className="text-cyan-800 hover:underline">
                             Cadastre-se
                         </Link>
                     </p>

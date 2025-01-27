@@ -13,7 +13,7 @@ function CardPostagens({ postagem }: CardPostagensProps) {
             flex flex-col rounded overflow-hidden justify-between m-2'>
 
             <div>
-                <div className="flex w-full bg-lime-500 py-2 px-4 items-center gap-4">
+                <div className="flex w-full bg-cyan-700 py-2 px-4 items-center gap-4">
 
                     <img
                         src={postagem.usuario?.foto || 'https://cdn-icons-png.flaticon.com/128/3549/3549776.png'}
@@ -35,7 +35,7 @@ function CardPostagens({ postagem }: CardPostagensProps) {
             </div>
             <div className="flex">
                 <Link to={`/editarpostagem/${postagem.id}`}
-                    className='w-full text-slate-100 bg-lime-500 hover:bg-lime-700 
+                    className='w-full text-slate-100 bg-cyan-500 hover:bg-cyan-700 
                       first:flex items-center justify-center py-2'>
                     <button>Editar</button>
                 </Link>

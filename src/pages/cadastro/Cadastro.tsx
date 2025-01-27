@@ -69,7 +69,7 @@ function Cadastro() {
     return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-2 h-screen 
-            place-items-center font-bold">
+            place-items-center font-bold bg-amber-50">
                 <div className="fundoCadastro hidden lg:block"></div>
                 <form className='flex justify-center items-center flex-col w-2/3 gap-3'
                     onSubmit={cadastrarNovoUsuario}>
@@ -141,8 +141,8 @@ function Cadastro() {
                         </button>
                         <button
                             type='submit'
-                            className='rounded text-white bg-indigo-400 
-                           hover:bg-indigo-900 w-1/2 py-2
+                            className='rounded text-white bg-cyan-400 
+                           hover:bg-cyan-900 w-1/2 py-2
                            flex justify-center'
                         >
                             {isLoading ? <RotatingLines
